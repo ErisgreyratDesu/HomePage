@@ -717,8 +717,8 @@ transition: all 1s;
         grid-template-rows: auto 1.5fr auto;
     }
     .wrapper_main {
-        width: 85%;
-        height: 65%;
+        width: 95%;
+        height: 100%;
         grid-template-rows:0.6fr 1fr 0.6fr 0.5fr;
     }
     .profile {
