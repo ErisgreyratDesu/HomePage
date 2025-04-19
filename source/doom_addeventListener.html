@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom - addEvenListenter!</title>
+    <style>
+        *,*::before,*::after{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        body {
+            width: 100%;
+            height: 100vh;
+            background-image:linear-gradient(0deg,black,white);
+            background-repeat:no-repeat;
+        }
+        .btn_hover {
+            border-radius: 2em;
+            border:none;
+            background:black;
+            color:white;
+            display: block;
+            margin: 0 auto;
+            padding: 1em 2em;
+            transition: all 1s ease;
+        }
+        .btn_hover_changed {
+            color:black;
+            background-color: white;
+            transition: all 1s ease;
+            transform: scale(1.1);
+            position: relative;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <button class="btn_hover">I'm button!</button>
+    <script>
+        const hoverme = document.querySelector(".btn_hover");
+        hoverme.addEventListener("mouseover", () => {
+            hoverme.classList.toggle("btn_hover_changed");
+        });
+        hoverme.addEventListener("mouseout", () => {
+            hoverme.classList.toggle("btn_hover_changed");
+        });
+    </script>
+</body>
+</html>

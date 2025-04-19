@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .crazy {
+    color: red;
+    font-size: 28px;
+    transform: rotate(5deg);
+    transition: all 1s ease;
+  }
+    </style>
+</head>
+<body>
+    <h2 id="title">Đây là tiêu đề ban đầu</h2>
+<p class="content">Đây là đoạn văn nhỏ</p>
+<ul>
+  <li class="task">Việc 1</li>
+  <li class="task">Việc 2</li>
+  <li class="task">Việc 3</li>
+</ul>
+
+<button onclick="changeAll()">Thay đổi DOM!</button>
+<!-- --------------------------This is part 2--------------------- -->
+<h3 id="demoText">Eris đang yên bình 🌸😂</h3>
+<button onclick="runMagic()">Biến hình!</button>
+<script>
+    function runMagic() {
+    const el = document.getElementById("demoText");
+    el.style.color = "blue";
+    el.textContent = "Eris is the best 🌸";
+    el.classList.toggle("crazy");
+  }
+  function changeAll() {
+    const titlene = document.getElementById("title");
+    const contentne = document.querySelector(".content");
+    const tasks = document.querySelectorAll(".task");
+    tasks.forEach(taskne => {
+        taskne.style.color = "red";
+        taskne.textContent = "Eris lover!";
+        taskne.style.listStyle = "none";
+    });
+  }
+</script>
+</body>
+</html>
