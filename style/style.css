@@ -275,7 +275,7 @@ main {
     width: 100%;
 }
 .profile {
-    background-image: url(..\img\Eris-Boreas-Greyrat-Mushoku-Tensei-Character-Anime.png);
+    background-image: url(../img/Eris-Boreas-Greyrat-Mushoku-Tensei-Character-Anime.png);
     background-repeat: no-repeat;
     border: none;
     -webkit-box-reflect: below -3.9em linear-gradient(transparent 20%, rgba(0, 0, 0, 0.35));
@@ -724,8 +724,8 @@ transition: all 1s;
     .profile {
         grid-row: 3 / 4;
         grid-column: 2 / 3;
-        width: 80%;
-        height: 80%;
+        width: 100%;
+        height: 85%;
         background-size: cover;
     }
     .button.button2 {
